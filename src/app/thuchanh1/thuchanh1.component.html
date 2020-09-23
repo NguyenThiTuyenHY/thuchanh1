@@ -1,0 +1,47 @@
+<p>
+    Nhập x: <input type="text" [(ngModel)]="x" (change)="changeso()">
+</p>
+<p>
+    Nhập n: <input type="text" [(ngModel)]="n" (change)="changeso()">
+</p>
+<p>{{result1}}</p>
+<p>{{result2}}</p>
+<br>
+
+<p>Bài 3:</p>
+<ul>
+    <li *ngFor="let s of ds">{{s.hoten}} || {{s.diemthi}}</li>
+</ul>
+<p>Sau khi sắp xếp: </p>
+<ul>
+    <li *ngFor="let s of ds1">{{s.hoten}} || {{s.diemthi}}</li>
+</ul>
+<p>Bài 4:</p>
+<ul>
+    <li *ngFor=" let s of ds2 ">{{s.hoten}} || {{s.quequan}} || {{s.diemthi}}</li>
+</ul>
+<p>Sau khi lọc học sinh quên ở Hải Phòng và điểm lớn hơn 8: </p>
+<ul>
+    <li *ngFor="let s of ds3 ">{{s.hoten}} || {{s.quequan}} || {{s.diemthi}}</li>
+</ul>
+<p>Bài 5:</p>
+<ul>
+    <li *ngFor=" let s of dayso ">{{s}}</li>
+</ul>
+<p>Các số chính phương trong dãy: </p>
+<ul>
+    <li *ngFor="let s of dayso1 ">{{s}}</li>
+</ul>
+<p>Bài 6:</p>
+<ul>
+    <li *ngFor=" let s of dayso3 ">{{s}}</li>
+</ul>
+<p>Tổng số các phần tử là số dương là: {{result4}} </p>
+<div>
+    <p>Bài 7: </p>
+    <p>{{result3}}</p>
+</div>
+<p>Bài 8: </p>
+<p>
+    Thể tích hình chóp có đáy tam giác có các cạnh lần lượt 3,4,5 và chiều cao 4 là: {{result5}}
+</p>
